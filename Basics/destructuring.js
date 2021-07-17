@@ -16,3 +16,20 @@ console.log(lastName, happy);
 
 const { address: { street, number} } = person;
 console.log(street, number);
+
+const [n1, , n3, , n5, , n6 = 0] = [10, 7, 9, 8];
+console.log(n1, n3, n5, n6);
+
+const [, [, nota]] = [[, 8, 8], [9, 6, 8]];
+console.log(nota);
+
+function random({ min = 0, max = 1000 } = {}) {
+  const value = Math.random() * (max - min) + min;
+  return Math.floor(value);
+}
+
+const obj = { max: 50, min: 40 };
+console.log(random(obj));
+console.log(random({ min: 50, max: 60 }));
+console.log(random({ min: 950 }));
+console.log(random({}));
