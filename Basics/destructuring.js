@@ -33,3 +33,13 @@ console.log(random(obj));
 console.log(random({ min: 50, max: 60 }));
 console.log(random({ min: 950 }));
 console.log(random({}));
+
+function random2([min = 0, max = 1000]) {
+  if (min > max) [min, max] = [max, min];
+  const value = Math.random() * (max - min) + min;
+  return Math.floor(value);
+}
+
+console.log(random2([50, 40]));
+console.log(random2([980]));
+console.log(random2([]));
