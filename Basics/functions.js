@@ -31,3 +31,7 @@ sum1(6, 9);
 
 const sum2 = (a, b) => a + b;
 console.log(sum2(7, 3));
+
+const result = score => score >= 7 ? 'Aprovado' : 'Reprovado';
+console.log(result(7));
+console.log(result(6.7));
