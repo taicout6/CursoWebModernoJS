@@ -1,3 +1,1 @@
-# js-exercices
-
-## Curso Web Moderno JS
+# Curso Web Moderno JS
