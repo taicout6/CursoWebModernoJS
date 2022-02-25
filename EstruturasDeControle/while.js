@@ -10,4 +10,10 @@ while (opcao != -1) {
   console.log(`Opção escolhida foi ${opcao}.`);
 }
 
+let contador = 0;
+while(contador <= 10) {
+  console.log(`contador = ${contador}`);
+  contador++
+}
+
 console.log('Fim!');
