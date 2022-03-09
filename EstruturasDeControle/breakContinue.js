@@ -4,5 +4,12 @@ for (x in nums) {
   if (x === 5) {
     break
   }
-  console.log(`x = ${nums[x]}`);
+  console.log(`${x} = ${nums[x]}`);
+}
+
+for (y in nums) {
+  if (y === 4) {
+    continue
+  }
+  console.log(`${y} = ${nums[y]}`);
 }
